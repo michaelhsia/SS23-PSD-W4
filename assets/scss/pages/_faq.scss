@@ -1,0 +1,42 @@
+.faq {
+    width: 66.67%;
+    padding-top: 96px;
+    padding-bottom: 80px;
+    line-height: 1.5;
+    @media (max-width: 992px) {
+        width: 100%;
+        padding-top: 80px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+    h2 {
+        font-size: $font-48;
+        margin-bottom: 32px;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+        @media (max-width: 767px) {
+            font-size: $font-24;
+            margin-bottom: 24px;
+        }
+    }
+    & > p {
+        font-size: $font-24;
+        margin-bottom: 24px;
+    }
+    li {
+        margin-bottom: 32px;
+        @media (max-width: 767px) {
+            margin-bottom: 24px;
+        }
+    }
+    h3 {
+        font-size: $font-20;
+        margin-bottom: 8px;
+    }
+}
+
+.fwb {
+    font-weight: $fwb;
+}

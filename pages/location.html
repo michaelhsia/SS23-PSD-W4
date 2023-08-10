@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container">
+        <div class="location">
+            <h2 class="fwb">門市據點</h2>
+            <form action="index.html">
+                <label for="location">選擇地區</label>
+                <select name="location" id="location">
+                    <option value="Taipei Zhongshan">台北中山旗艦店</option>
+                    <option value="Taipei Zhishan">台北綠園店</option>
+                    <option value="Taichung Cingshui">台中清水旗艦店</option>
+                    <option value="Kaohsiung JhongJheng">高雄中正形象店</option>
+                    <option value="Kaohsiung Dream Mall">高雄夢時代店</option>
+                </select>
+            </form>
+            <div class="location-wrap">
+                <div class="store">
+                    <img src="../assets/images/storepage-1.png" alt="Taipei Zhongshan Store">
+                    <div class="store-detail">
+                        <h3>台北中山旗艦店</h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a href="tel:(02)000-1234">
+                                    <span class="material-icons-outlined">phone</span>
+                                    <span>電話：(02)000-1234</span>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="＃">
+                                    <span class="material-icons-outlined">schedule</span>
+                                    <span>營業時間：10:00-21:00</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="material-icons-outlined">place</span>
+                                    <span>地址：台北市中山區南京東路25巷2-1號</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="map">
+                    <img src="../assets/images/map.png" alt="Taipei Zhongshan Store Location">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
